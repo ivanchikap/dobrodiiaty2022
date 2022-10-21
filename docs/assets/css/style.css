@@ -12,7 +12,7 @@
     object-fit: contain;
 }
 
-.text-overflow, .nav__item {
+.text-overflow, .header__login, .nav__item {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -8041,6 +8041,16 @@ strong.violet {
     color: #5E2E94;
 }
 
+h2 {
+    font-family: "Comfortaa", cursive;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.3rem;
+    line-height: 1.2;
+    color: #0B1B35;
+    margin-bottom: 3.2rem;
+}
+
 .hidden-title {
     visibility: hidden;
     height: 0;
@@ -8206,10 +8216,38 @@ strong.violet {
     gap: 4px 44px;
 }
 
+.nav--footer {
+    max-width: 70%;
+}
+
 .nav__item {
     font-size: 2rem;
     line-height: 1.4;
     color: #000;
+}
+
+.list__item {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 1.8rem;
+    line-height: 1.1;
+}
+
+.list__item::before {
+    content: "";
+    display: block;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 3.4rem;
+    height: 3.4rem;
+    margin-right: 1.1rem;
+    background: url("../images/star.png") no-repeat center/contain;
+}
+
+.list__item + .list__item {
+    margin-top: 1.8rem;
 }
 
 .header {
@@ -8255,12 +8293,6 @@ strong.violet {
 
 .intro__info {
     max-width: 57%;
-}
-
-@media screen and (max-width: 1440px) {
-    .intro__info {
-        max-width: 59%;
-    }
 }
 
 .intro__title {
@@ -8311,6 +8343,13 @@ strong.violet {
     z-index: 3;
 }
 
+@media screen and (max-width: 1440px) {
+    .intro__photo {
+        width: 42rem;
+        height: 39rem;
+    }
+}
+
 .intro__photo::after {
     z-index: -1;
     content: "";
@@ -8330,6 +8369,24 @@ strong.violet {
 
 .intro__info {
     padding: 5.7rem 0 7.6rem 0;
+}
+
+.activity {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    background-image: linear-gradient(to right, #F2EFFA 0, #F2EFFA 51%, #fff 51%, #fff 100%);
+}
+
+.activity__slider {
+    padding: 3rem 0 1.8rem 0;
+}
+
+.activity__info {
+    padding-left: 3rem;
 }
 
 .footer {

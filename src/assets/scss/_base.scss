@@ -41,6 +41,16 @@ strong {
   }
 }
 
+h2 {
+  font-family: $comfortaa;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.3rem;
+  line-height: 1.2;
+  color: $black-light;
+  margin-bottom: 3.2rem;
+}
+
 .hidden-title {
   visibility: hidden;
   height: 0;

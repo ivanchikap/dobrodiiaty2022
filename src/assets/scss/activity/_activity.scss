@@ -1,0 +1,14 @@
+.activity {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background-image: linear-gradient(to right, $gray 0, $gray 51%, #fff 51%, #fff 100%);
+
+  &__slider {
+    padding: 3rem 0 1.8rem 0;
+  }
+
+  &__info {
+    padding-left: 3rem;
+  }
+}
