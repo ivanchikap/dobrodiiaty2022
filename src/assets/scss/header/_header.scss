@@ -1,4 +1,6 @@
 .header {
+  padding-bottom: 7rem;
+  border-bottom: 1px solid $violet;
 
   &__top {
     position: relative;
@@ -23,5 +25,6 @@
     font-weight: 500;
     font-size: 1.8rem;
     margin-right: 1.5rem;
+    @extend .text-overflow;
   }
 }

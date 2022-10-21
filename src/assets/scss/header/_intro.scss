@@ -3,6 +3,10 @@
   min-height: 52rem;
   background-color: $purple;
 
+  &__info {
+    max-width: 57%;
+  }
+
   &__title {
     font-family: $comfortaa;
     font-size: 7rem;
@@ -49,6 +53,11 @@
     width: 43rem;
     height: 40rem;
     z-index: 3;
+
+    @include widescreen {
+      width: 42rem;
+      height: 39rem;
+    }
 
     &::after {
       z-index: -1;

@@ -1,0 +1,18 @@
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 50%;
+  gap: 4px 44px;
+
+  &--footer {
+    max-width: 70%;
+  }
+
+  &__item {
+    font-size: 2rem;
+    line-height: 1.4;
+    color: $black;
+    @extend .text-overflow;
+  }
+}
