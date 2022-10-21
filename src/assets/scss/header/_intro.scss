@@ -1,0 +1,76 @@
+.intro {
+  position: relative;
+  min-height: 52rem;
+  background-color: $purple;
+
+  &__title {
+    font-family: $comfortaa;
+    font-size: 7rem;
+    line-height: 1.15;
+    font-weight: 700;
+    color: $black-light;
+    margin-bottom: 2.8rem;
+
+    @include widescreen {
+      font-size: 6.6rem;
+    }
+
+    span {
+      &:last-child {
+        position: relative;
+
+        &::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: 1rem;
+          width: 100%;
+          height: 1.5rem;
+          background: $yellow;
+        }
+      }
+    }
+  }
+
+  &__text {
+    font-size: 1.8rem;
+    line-height: 1.58;
+    color: $black;
+
+    p + p {
+      margin-top: 2.2rem;
+    }
+  }
+
+  &__photo {
+    position: absolute;
+    right: 10vw;
+    bottom: 0;
+    width: 43rem;
+    height: 40rem;
+    z-index: 3;
+
+    &::after {
+      z-index: -1;
+      content: '';
+      position: absolute;
+      bottom: 6rem;
+      right: -7rem;
+      width: 45.7rem;
+      height: 45.7rem;
+      background: url("../images/zarka.png") no-repeat center / contain;
+    }
+
+    @include widescreen {
+      right: 9vw;
+    }
+
+    img {
+      @extend .img-cover;
+    }
+  }
+
+  &__info {
+    padding: 5.7rem 0 7.6rem 0;
+  }
+}

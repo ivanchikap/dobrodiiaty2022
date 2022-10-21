@@ -1,0 +1,9 @@
+.logo {
+  max-width: 20rem;
+  height: auto;
+  flex-shrink: 0;
+
+  img {
+    @extend .img-contain;
+  }
+}
