@@ -1,4 +1,4 @@
-.img-cover, .intro__photo img, .slider__img img {
+.img-cover, .intro__photo img, .card__photo img, .slider__img img {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
@@ -6192,8 +6192,8 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url("../webfonts/fa-brands-400.eot");
-  src: url("../webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-brands-400.woff2") format("woff2"), url("../webfonts/fa-brands-400.woff") format("woff"), url("../webfonts/fa-brands-400.ttf") format("truetype"), url("../webfonts/fa-brands-400.svg#fontawesome") format("svg");
+  src: url("../fonts/fa-brands-400.eot");
+  src: url("../fonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-brands-400.woff2") format("woff2"), url("../fonts/fa-brands-400.woff") format("woff"), url("../fonts/fa-brands-400.ttf") format("truetype"), url("../fonts/fa-brands-400.svg#fontawesome") format("svg");
 }
 
 .fab {
@@ -6206,8 +6206,8 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url("../webfonts/fa-regular-400.eot");
-  src: url("../webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-regular-400.woff2") format("woff2"), url("../webfonts/fa-regular-400.woff") format("woff"), url("../webfonts/fa-regular-400.ttf") format("truetype"), url("../webfonts/fa-regular-400.svg#fontawesome") format("svg");
+  src: url("../fonts/fa-regular-400.eot");
+  src: url("../fonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-regular-400.woff2") format("woff2"), url("../fonts/fa-regular-400.woff") format("woff"), url("../fonts/fa-regular-400.ttf") format("truetype"), url("../fonts/fa-regular-400.svg#fontawesome") format("svg");
 }
 
 .far {
@@ -6220,8 +6220,8 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 900;
   font-display: block;
-  src: url("../webfonts/fa-solid-900.eot");
-  src: url("../webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../webfonts/fa-solid-900.woff") format("woff"), url("../webfonts/fa-solid-900.ttf") format("truetype"), url("../webfonts/fa-solid-900.svg#fontawesome") format("svg");
+  src: url("../fonts/fa-solid-900.eot");
+  src: url("../fonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-solid-900.woff2") format("woff2"), url("../fonts/fa-solid-900.woff") format("woff"), url("../fonts/fa-solid-900.ttf") format("truetype"), url("../fonts/fa-solid-900.svg#fontawesome") format("svg");
 }
 
 .fa,
@@ -8354,6 +8354,172 @@ h2::after {
     transform: translate(-50%, -58%) rotate(135deg);
 }
 
+.card {
+    max-width: 42rem;
+    color: #0B1B35;
+}
+
+.card__info {
+    padding: 1.2rem 1.2rem 0 1.2rem;
+    transition-delay: 0.2s;
+    transition: padding 0.6s ease-in-out;
+}
+
+.slick-center .card__info {
+    padding-right: 0;
+}
+
+.card__info-inner {
+    position: relative;
+    padding: 1.6rem 1.8rem 1rem 1.6rem;
+    background: #fff;
+    border-left: 1px solid #000;
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+}
+
+.card__info-inner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: calc(100% + 1rem);
+    background-color: #FFEF5E;
+    border-left: 1px solid #000;
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+    z-index: -1;
+    transition-delay: 0.2s;
+    transition: -webkit-transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
+}
+
+.slick-center .card__info-inner::after {
+    -webkit-transform: translate(-1rem, -1rem);
+    transform: translate(-1rem, -1rem);
+}
+
+.card h5 {
+    font-family: "Comfortaa", cursive;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1.25;
+    text-transform: uppercase;
+}
+
+.card h5 span:last-child {
+    display: block;
+}
+
+.card h6 {
+    font-family: "Comfortaa", cursive;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1;
+    margin-top: 0.6rem;
+    height: 3rem;
+}
+
+.card p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    height: 6.4rem;
+}
+
+.card__photo {
+    position: relative;
+    width: 100%;
+    height: 22rem;
+}
+
+.card__photo .card__zarka {
+    position: absolute;
+    left: -2.7rem;
+    top: -1.5rem;
+    display: block;
+    width: 14.2rem;
+    height: 11.2rem;
+    z-index: 11;
+}
+
+.card__links {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 1.2rem;
+    font-size: 2.6rem;
+    color: #FFEF5E;
+    line-height: 1;
+    z-index: 11;
+}
+
+.card__links a + a {
+    margin-left: 0.4rem;
+}
+
+.t-slider {
+    padding-bottom: 6rem;
+    margin: 0 -1.9rem;
+}
+
+.t-slider__item {
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 1.9rem;
+}
+
+.t-slider .slick-prev, .t-slider .slick-next {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 3.3rem;
+    height: 3.3rem;
+    background-color: #CFC4ED;
+    border-radius: 50%;
+    color: transparent;
+    font-size: 0;
+}
+
+.t-slider .slick-prev::before, .t-slider .slick-next::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    width: 10px;
+    height: 10px;
+    border-left: 1px solid #F2EFFA;
+    border-top: 1px solid #F2EFFA;
+    transition: border-color 0.2s linear;
+}
+
+.t-slider .slick-prev:hover::before, .t-slider .slick-next:hover::before {
+    border-color: #000;
+}
+
+.t-slider .slick-prev {
+    -webkit-transform: translate(-3.5rem);
+    transform: translate(-3.5rem);
+}
+
+.t-slider .slick-prev::before {
+    -webkit-transform: translate(-37%, -43%) rotate(-45deg);
+    transform: translate(-37%, -43%) rotate(-45deg);
+}
+
+.t-slider .slick-next {
+    -webkit-transform: translate(0.5rem);
+    transform: translate(0.5rem);
+}
+
+.t-slider .slick-next::before {
+    -webkit-transform: translate(-72%, -40%) rotate(135deg);
+    transform: translate(-72%, -40%) rotate(135deg);
+}
+
 .header {
     padding-bottom: 7rem;
     border-bottom: 1px solid #5E2E94;
@@ -8489,6 +8655,10 @@ h2::after {
     margin-bottom: 3.2rem;
 }
 
+.activity h5, .activity h6 {
+    text-align: center;
+}
+
 .activity__slider {
     padding: 3rem 0 1.8rem 0;
 }
@@ -8501,7 +8671,7 @@ h2::after {
     padding: 10rem 0;
 }
 
-.team__inner {
+.team__header {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
