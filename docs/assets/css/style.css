@@ -8510,8 +8510,8 @@ h2::after {
 }
 
 .t-slider .slick-prev::before {
-    -webkit-transform: translate(-37%, -43%) rotate(-45deg);
-    transform: translate(-37%, -43%) rotate(-45deg);
+    -webkit-transform: translate(-42%, -58%) rotate(-45deg);
+    transform: translate(-42%, -58%) rotate(-45deg);
 }
 
 .t-slider .slick-next {
@@ -8520,8 +8520,8 @@ h2::after {
 }
 
 .t-slider .slick-next::before {
-    -webkit-transform: translate(-72%, -40%) rotate(135deg);
-    transform: translate(-72%, -40%) rotate(135deg);
+    -webkit-transform: translate(-72%, -58%) rotate(135deg);
+    transform: translate(-72%, -58%) rotate(135deg);
 }
 
 .header {
