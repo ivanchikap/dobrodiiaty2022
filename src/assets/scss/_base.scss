@@ -43,12 +43,29 @@ strong {
 
 h2 {
   font-family: $comfortaa;
-  font-style: normal;
   font-weight: 700;
   font-size: 3.3rem;
   line-height: 1.2;
   color: $black-light;
-  margin-bottom: 3.2rem;
+  position: relative;
+
+  span:last-child {
+    position: relative;
+    display: block;
+    z-index: 3;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    width: 28.6rem;
+    height: 0.9rem;
+    background-color: $yellow;
+    position: absolute;
+    left: 0;
+    bottom: 6px;
+    z-index: 1;
+  }
 }
 
 .hidden-title {

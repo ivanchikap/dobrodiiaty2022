@@ -1,7 +1,7 @@
 $( document ).ready(function() {
     $('.slider').slick({
         centerMode: true,
-        centerPadding: '60px',
+        centerPadding: '',
         slidesToShow: 3,
         responsive: [
 

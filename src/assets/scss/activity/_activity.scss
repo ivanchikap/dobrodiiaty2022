@@ -4,6 +4,10 @@
   flex-wrap: wrap;
   background-image: linear-gradient(to right, $gray 0, $gray 51%, #fff 51%, #fff 100%);
 
+  h2 {
+    margin-bottom: 3.2rem;
+  }
+
   &__slider {
     padding: 3rem 0 1.8rem 0;
   }
