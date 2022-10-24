@@ -8403,11 +8403,13 @@ h2::after {
 }
 
 .card h5 {
+    height: 5rem;
     font-family: "Comfortaa", cursive;
     font-weight: 700;
     font-size: 2rem;
     line-height: 1.25;
     text-transform: uppercase;
+    overflow: hidden;
 }
 
 .card h5 span:last-child {
@@ -8422,12 +8424,14 @@ h2::after {
     line-height: 1;
     margin-top: 0.6rem;
     height: 3rem;
+    overflow: hidden;
 }
 
 .card p {
     font-size: 1.2rem;
     margin-top: 1rem;
     height: 6.4rem;
+    overflow: hidden;
 }
 
 .card__photo {
