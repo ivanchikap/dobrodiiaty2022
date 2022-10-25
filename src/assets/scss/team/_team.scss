@@ -1,14 +1,24 @@
 .team {
   padding: 10rem 0;
 
+  @include laptop {
+    padding: 5rem 0;
+  }
+
   &__header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 6rem;
   }
 
   h2 {
-    max-width: 55%;
+    max-width: 70%;
+
+    span {
+      display: block;
+      @extend .text-overflow;
+    }
   }
 }

@@ -28,6 +28,10 @@ body {
 }
 main {
   padding: 7rem 0 9rem 0;
+
+  @include laptop {
+    padding: 5rem 0 7rem 0;
+  }
 }
 
 footer {
@@ -38,6 +42,41 @@ strong {
   font-weight: 700;
   &.violet {
     color: $violet;
+  }
+}
+
+h1 {
+  font-family: $comfortaa;
+  font-size: 7rem;
+  line-height: 1.15;
+  font-weight: 700;
+  color: $black-light;
+  margin-bottom: 2.8rem;
+
+  @include widescreen {
+    font-size: 6.6rem;
+  }
+
+  @include laptop {
+    font-size: 5.2rem;
+  }
+
+  span {
+    &:last-child {
+      position: relative;
+      z-index: 3;
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 1rem;
+        width: 102%;
+        height: 1.5rem;
+        background: $yellow;
+        z-index: -1;
+      }
+    }
   }
 }
 
@@ -53,18 +92,18 @@ h2 {
     position: relative;
     display: block;
     z-index: 3;
-  }
 
-  &::after {
-    content: '';
-    display: block;
-    width: 28.6rem;
-    height: 0.9rem;
-    background-color: $yellow;
-    position: absolute;
-    left: 0;
-    bottom: 6px;
-    z-index: 1;
+    &::after {
+      content: '';
+      display: block;
+      width: 28.6rem;
+      height: 0.9rem;
+      background-color: $yellow;
+      position: absolute;
+      left: 0;
+      top: 2.5rem;
+      z-index: -1;
+    }
   }
 }
 

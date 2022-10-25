@@ -2,6 +2,10 @@
   padding-bottom: 7rem;
   border-bottom: 1px solid $violet;
 
+  @include laptop {
+    padding-bottom: 5rem;
+  }
+
   &__top {
     position: relative;
     z-index: 4;

@@ -1,0 +1,53 @@
+.action {
+  padding-top: 1.6rem;
+  padding-bottom: 2.6rem;
+
+  &__group {
+    position: relative;
+  }
+
+  &__item {
+    position: relative;
+    display: inline-block;
+    width: 75.5%;
+    padding: 1.4rem 26rem 1.4rem 5.8rem;
+    background-color: $purple;
+    min-height: 9.5rem;
+
+    @include laptop {
+      padding: 1rem 26rem 1rem 2.8rem;
+      min-height: 8rem;
+    }
+
+    span {
+      display: block;
+      max-width: 100%;
+      overflow: hidden;
+
+      &:first-child {
+        font-family: $comfortaa;
+        font-weight: 700;
+        font-size: 2.5rem;
+        line-height: 1.6;
+        color: $black;
+        @extend .text-overflow;
+      }
+    }
+
+    &::after {
+      content: '';
+      width: 2.19rem;
+      height: 2.19rem;
+      position: absolute;
+      right: 22rem;
+      top: 50%;
+      border-top: 1px solid $white;
+      border-right: 1px solid $white;
+      transform: translateY(-50%) rotate(45deg);
+    }
+
+    & + & {
+      margin-top: 1.6rem;
+    }
+  }
+}
