@@ -8281,9 +8281,29 @@ h2 span:last-child::after {
 }
 
 .nav__item {
+    position: relative;
     font-size: 2rem;
     line-height: 1.4;
     color: #000;
+}
+
+.nav__item::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background-color: #FFEF5E;
+    transition: width 0.1s ease;
+}
+
+.nav__item:hover::after, .nav__item:focus::after {
+    width: 100%;
+}
+
+.nav__item.active::after {
+    width: 100%;
 }
 
 .list__item {

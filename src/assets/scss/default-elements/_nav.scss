@@ -10,9 +10,29 @@
   }
 
   &__item {
+    position: relative;
     font-size: 2rem;
     line-height: 1.4;
     color: $black;
     @extend .text-overflow;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 4px;
+      background-color: $yellow;
+      transition: width .1s ease;
+    }
+
+    &:hover::after, &:focus::after {
+      width: 100%;
+    }
+
+    &.active::after {
+      width: 100%;
+    }
   }
 }
