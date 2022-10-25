@@ -12,7 +12,7 @@
     object-fit: contain;
 }
 
-.text-overflow, .action__item span:first-child, .team h2 span, .header__login, .nav__item {
+.text-overflow, .action__head span:first-child, .team h2 span, .header__login, .nav__item {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -8793,9 +8793,33 @@ h2 span:last-child::after {
     position: relative;
 }
 
-.action__item {
+.action__item + .action__item {
+    margin-top: 1.6rem;
+}
+
+.action__item.active .action__body {
+    max-height: 50rem;
+    padding: 1.4rem 26rem 1.4rem 5.8rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .action__item.active .action__body {
+        padding: 1rem 26rem 1rem 2.8rem;
+    }
+}
+
+.action__item.active .action__head {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.action__item.active .action__head::after {
+    -webkit-transform: translateY(-50%) rotate(135deg);
+    transform: translateY(-50%) rotate(135deg);
+}
+
+.action__head {
+    cursor: pointer;
     position: relative;
-    display: inline-block;
     width: 75.5%;
     padding: 1.4rem 26rem 1.4rem 5.8rem;
     background-color: #CFC4ED;
@@ -8803,19 +8827,19 @@ h2 span:last-child::after {
 }
 
 @media screen and (max-width: 1200px) {
-    .action__item {
+    .action__head {
         padding: 1rem 26rem 1rem 2.8rem;
         min-height: 8rem;
     }
 }
 
-.action__item span {
+.action__head span {
     display: block;
     max-width: 100%;
     overflow: hidden;
 }
 
-.action__item span:first-child {
+.action__head span:first-child {
     font-family: "Comfortaa", cursive;
     font-weight: 700;
     font-size: 2.5rem;
@@ -8823,7 +8847,7 @@ h2 span:last-child::after {
     color: #000;
 }
 
-.action__item::after {
+.action__head::after {
     content: "";
     width: 2.19rem;
     height: 2.19rem;
@@ -8834,10 +8858,23 @@ h2 span:last-child::after {
     border-right: 1px solid #fff;
     -webkit-transform: translateY(-50%) rotate(45deg);
     transform: translateY(-50%) rotate(45deg);
+    transition: -webkit-transform 0.3s linear;
+    transition: transform 0.3s linear;
+    transition: transform 0.3s linear, -webkit-transform 0.3s linear;
 }
 
-.action__item + .action__item {
-    margin-top: 1.6rem;
+.action__body {
+    max-height: 0;
+    overflow: hidden;
+    width: 75%;
+    transition: max-height 0.3s linear, padding 0.1s linear;
+    padding: 0 26rem 0 5.8rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .action__body {
+        padding: 0 26rem 0 2.8rem;
+    }
 }
 
 .footer {
