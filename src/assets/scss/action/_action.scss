@@ -83,7 +83,9 @@
     overflow: hidden;
     width: 75%;
     transition: max-height .3s linear, padding .1s linear;
-    padding: 0 26rem 0 5.8rem;
+    padding: 0 20rem 0 5.8rem;
+    background-color: $purple;
+    transform: translateY(-1px);
 
     @include laptop {
       padding: 0 26rem 0 2.8rem;
