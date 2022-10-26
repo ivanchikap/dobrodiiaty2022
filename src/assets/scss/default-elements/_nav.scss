@@ -2,8 +2,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 50%;
-  gap: 4px 44px;
+  max-width: calc(70% - 20rem);
+  padding: 0 1rem;
+  gap: 4px 16px;
 
   &--footer {
     max-width: 70%;

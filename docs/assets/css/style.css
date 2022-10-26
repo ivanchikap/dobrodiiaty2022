@@ -8868,7 +8868,10 @@ h2 span:last-child::after {
     overflow: hidden;
     width: 75%;
     transition: max-height 0.3s linear, padding 0.1s linear;
-    padding: 0 26rem 0 5.8rem;
+    padding: 0 20rem 0 5.8rem;
+    background-color: #CFC4ED;
+    -webkit-transform: translateY(-1px);
+    transform: translateY(-1px);
 }
 
 @media screen and (max-width: 1200px) {

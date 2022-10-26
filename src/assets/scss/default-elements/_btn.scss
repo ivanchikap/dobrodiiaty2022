@@ -2,9 +2,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
   font-family: $montserrat;
   border-radius: 1rem;
-
+  @extend .text-overflow;
 
   &--default {
     padding: 1rem 2.7rem;

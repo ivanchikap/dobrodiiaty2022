@@ -6,6 +6,7 @@
   width: 43.2rem;
   border-radius: 50%;
   background-color: $yellow;
+  box-shadow: 0 -3px 100px rgba($black, .25);
 
   @include laptop {
     height: 38.2rem;

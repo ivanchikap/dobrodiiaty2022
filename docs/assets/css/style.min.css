@@ -10,7 +10,7 @@
   object-fit: contain;
 }
 
-.text-overflow, .action__head span:first-child, .team h2 span, .header__login, .nav__item {
+.text-overflow, .action__head span:first-child, .team h2 span, .header__login, .nav__item, .btn {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -7784,6 +7784,7 @@ h2 span:last-child::after {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
   font-family: "Montserrat", sans-serif;
   border-radius: 1rem;
 }
@@ -7830,8 +7831,9 @@ h2 span:last-child::after {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 50%;
-  gap: 4px 44px;
+  max-width: calc(70% - 20rem);
+  padding: 0 1rem;
+  gap: 4px 16px;
 }
 .nav--footer {
   max-width: 70%;
@@ -8093,6 +8095,7 @@ h2 span:last-child::after {
   width: 43.2rem;
   border-radius: 50%;
   background-color: #FFEF5E;
+  box-shadow: 0 -3px 100px rgba(0, 0, 0, 0.25);
 }
 @media screen and (max-width: 1200px) {
   .circle {
@@ -8141,8 +8144,10 @@ h2 span:last-child::after {
   align-items: center;
 }
 .header__actions {
+  max-width: 30%;
   display: flex;
   align-items: center;
+  flex-shrink: 0;
 }
 .header__login {
   font-family: "Montserrat", sans-serif;
@@ -8256,11 +8261,13 @@ h2 span:last-child::after {
 }
 .action__item.active .action__body {
   max-height: 50rem;
-  padding: 1.4rem 26rem 1.4rem 5.8rem;
+  padding-top: 1.4rem;
+  padding-bottom: 1.4rem;
 }
 @media screen and (max-width: 1200px) {
   .action__item.active .action__body {
-    padding: 1rem 26rem 1rem 2.8rem;
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
   }
 }
 .action__item.active .action__head {
@@ -8318,7 +8325,7 @@ h2 span:last-child::after {
 }
 @media screen and (max-width: 1200px) {
   .action__body {
-    padding: 0 26rem 0 2.8rem;
+    padding: 0 20rem 0 3.8rem;
   }
 }
 
