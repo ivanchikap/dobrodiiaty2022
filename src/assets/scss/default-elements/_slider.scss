@@ -1,5 +1,10 @@
 .slider {
-  padding-bottom: 2.5rem;
+  padding-bottom: .7rem;
+
+  .slick-track {
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+  }
 
   &__item {
     img {
@@ -10,19 +15,16 @@
 
   &__item {
     border-radius: 1.2rem;
-    padding: 5.6rem 0;
     transition: transform .3s linear;
 
     &.slick-center {
       z-index: 11;
       transform: scale(1.34);
-
-      .slider__img {
-        background-color: $yellow;
-      }
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+      background-color: $yellow;
 
       img {
-        transform: translate(-4px, -4px);
+        transform: translate(-2px, -2px);
       }
     }
   }
@@ -30,10 +32,12 @@
   &__img {
     border-radius: 1.2rem;
     overflow: hidden;
-    padding: 4px;
+    padding: 2px;
     background-clip: content-box;
+    height: 33rem;
 
     img {
+      border-radius: 1.2rem;
       @extend .img-cover;
     }
   }

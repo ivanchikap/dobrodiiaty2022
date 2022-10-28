@@ -7881,7 +7881,11 @@ h2 span:last-child::after {
 }
 
 .slider {
-  padding-bottom: 2.5rem;
+  padding-bottom: 0.7rem;
+}
+.slider .slick-track {
+  padding-top: 9rem;
+  padding-bottom: 9rem;
 }
 .slider__item img {
   transition-delay: 0.7s;
@@ -7889,24 +7893,26 @@ h2 span:last-child::after {
 }
 .slider__item {
   border-radius: 1.2rem;
-  padding: 5.6rem 0;
   transition: transform 0.3s linear;
 }
 .slider__item.slick-center {
   z-index: 11;
   transform: scale(1.34);
-}
-.slider__item.slick-center .slider__img {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
   background-color: #FFEF5E;
 }
 .slider__item.slick-center img {
-  transform: translate(-4px, -4px);
+  transform: translate(-2px, -2px);
 }
 .slider__img {
   border-radius: 1.2rem;
   overflow: hidden;
-  padding: 4px;
+  padding: 2px;
   background-clip: content-box;
+  height: 33rem;
+}
+.slider__img img {
+  border-radius: 1.2rem;
 }
 .slider .slick-prev, .slider .slick-next {
   position: absolute;
