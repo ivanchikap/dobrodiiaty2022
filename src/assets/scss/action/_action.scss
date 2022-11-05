@@ -14,10 +14,11 @@
     }
 
     &.active {
+      margin-bottom: -1.2rem;
 
       #{$root} {
         &__body {
-          max-height: 50rem;
+          max-height: 100rem;
           padding-top: 1.4rem;
           padding-bottom: 1.4rem;
 
@@ -28,7 +29,12 @@
         }
 
         &__head {
+          min-height: auto;
           border-bottom: 1px solid #e5e5e5;
+
+          span {
+            display: none;
+          }
 
           &::after {
             transform: translateY(-50%) rotate(135deg);
@@ -51,19 +57,19 @@
       min-height: 8rem;
     }
 
+    h5 {
+      font-family: $comfortaa;
+      font-weight: 700;
+      font-size: 2.5rem;
+      line-height: 1.6;
+      color: $black;
+      @extend .text-overflow;
+    }
+
     span {
       display: block;
       max-width: 100%;
       overflow: hidden;
-
-      &:first-child {
-        font-family: $comfortaa;
-        font-weight: 700;
-        font-size: 2.5rem;
-        line-height: 1.6;
-        color: $black;
-        @extend .text-overflow;
-      }
     }
 
     &::after {
@@ -81,16 +87,50 @@
   }
 
   &__body {
+    font-size: 20px;
+    line-height: 1.4;
+    color: $black;
     max-height: 0;
     overflow: hidden;
-    width: 75%;
-    transition: max-height .3s linear, padding .1s linear;
-    padding: 0 20rem 0 5.8rem;
+    width: 75.5%;
+    transition: max-height .5s linear, padding .1s linear;
+    padding: 0 15rem 0 5.8rem;
     background-color: $purple;
-    transform: translateY(-1px);
+    transform: translateY(-12px);
 
     @include laptop {
       padding: 0 20rem 0 3.8rem;
     }
+
+    h2, h3, h4, h5, h6 {
+      font-family: $comfortaa;
+      font-weight: 700;
+      font-size: 2rem;
+      line-height: 1.5;
+      color: $black;
+      margin-bottom: 1.2rem;
+    }
+
+    p + p {
+      margin-top: 2rem;
+    }
+
+    a {
+      color: $yellow;
+      font-weight: 600;
+      text-decoration: underline;
+      
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__title {
+    font-family: $comfortaa;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: $black;
   }
 }

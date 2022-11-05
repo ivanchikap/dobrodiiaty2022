@@ -6,8 +6,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const accordionItems = accordion.querySelectorAll(".action__item");
         const isAccordionHead = target.classList.contains("action__head");
         const isAccordionHeadSpan = target.tagName === 'SPAN';
+        const isAccordionHeadH5 = target.tagName === 'H5';
 
-        if (isAccordionHead || isAccordionHeadSpan) {
+        if (isAccordionHead || isAccordionHeadSpan || isAccordionHeadH5) {
             const accordionItem = target.closest(".action__item");
 
             accordionItems.forEach((item) => {

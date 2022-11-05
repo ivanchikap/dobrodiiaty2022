@@ -1,4 +1,26 @@
 .list {
+  $root: &;
+
+  &--yellow {
+    margin-bottom: 2rem;
+    #{$root} {
+      &__item {
+        line-height: 1.56;
+
+        &::before {
+          width: 3.4rem;
+          height: 2.7rem;
+          margin-right: .9rem;
+          background: url("../images/star-yellow.png") no-repeat center / contain;
+        }
+
+        & + li {
+          margin-top: 1.1rem;
+        }
+
+      }
+    }
+  }
 
   &__item {
     display: flex;

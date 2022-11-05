@@ -43,7 +43,7 @@
     }
   }
 
-  h5 {
+  &__title {
     height: 5rem;
     font-family: $comfortaa;
     font-weight: 700;
@@ -51,10 +51,11 @@
     line-height: 1.25;
     text-transform: uppercase;
     overflow: hidden;
+  }
 
-    span:last-child {
-      display: block;
-    }
+
+  h5 {
+    @extend .text-overflow;
   }
 
   h6 {
