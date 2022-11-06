@@ -4,79 +4,64 @@
   div {
     display: flex;
     align-items: baseline;
-    margin-bottom: 1.4rem;
-
-    &:nth-child(1) {
-      dt:after {
-        content: '1';
-      }
-    }
-    &:nth-child(2) {
-      dt:after {
-        content: '2';
-      }
-    }
-    &:nth-child(3) {
-      dt:after {
-        content: '3';
-      }
-    }
-    &:nth-child(4) {
-      dt:after {
-        content: '4';
-      }
-    }
-    &:nth-child(5) {
-      dt:after {
-        content: '5';
-      }
-    }
-    &:nth-child(6) {
-      dt:after {
-        content: '6';
-      }
-    }
-    &:nth-child(7) {
-      dt:after {
-        content: '7';
-      }
-    }
+    padding-bottom: 1.4rem;
+    overflow: hidden;
 
     &:last-child {
-      margin-bottom: 0;
+      padding-bottom: 0;
+
+      dt {
+        span:last-child:after {
+          content: '';
+          display: none;
+        }
+      }
     }
   }
 
   dt {
     display: flex;
-    align-items: center;
     flex-shrink: 0;
-    font-family: $comfortaa;
-    font-weight: 700;
-    font-size: 2rem;
-    line-height: 1;
-    color: $black;
-    width: 12%;
 
-    &::after {
-      content: '';
-      font-family: inherit;
+    span {
+      display: block;
+      font-family: $comfortaa;
       font-weight: 700;
-      font-size: 1.5rem;
-      line-height: 2.2rem;
-      text-align: center;
+      font-size: 2rem;
+      line-height: 1;
       color: $black;
-      flex-shrink: 0;
-      width: 2rem;
-      height: 2rem;
-      border-radius: 50%;
-      background-color: $yellow;
-      margin-left: .8rem;
+      height: 100%;
+
+      &:last-child {
+        position: relative;
+        font-family: inherit;
+        font-weight: 700;
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+        text-align: center;
+        color: $black;
+        flex-shrink: 0;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        background-color: $yellow;
+        margin-left: .8rem;
+
+        &:after {
+          content: '';
+          position: absolute;
+          top: 105%;
+          right: 50%;
+          height: 200rem;
+          width: 2px;
+          border-right: 1px dashed $yellow;
+        }
+      }
     }
   }
 
   dd {
-    width: 88%;
+    display: flex;
     padding-left: 1.3rem;
     font-size: 1.8rem;
     line-height: 1.56;
