@@ -54,4 +54,14 @@ document.addEventListener('DOMContentLoaded', (e) => {
         });
         element.classList.add('active');
     }
+
+
+
+    //Номерація в dd.d-list
+    const dList = document.querySelector('.d-list');
+    const [...dListItems] = dList.children;
+
+    dListItems.forEach((item) => {
+        const dtAfter = item.querySelector('');
+    });
 });
