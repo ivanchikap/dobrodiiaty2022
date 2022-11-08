@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', (e) => {
 
     //nav
-
     const nav = document.querySelector('.nav');
     const navFooter = document.querySelector('.nav--footer');
+    const navSidebar = document.querySelector('.nav--sidebar');
 
     nav.addEventListener('click', (e) => {
         e.preventDefault();
@@ -47,6 +47,35 @@ document.addEventListener('DOMContentLoaded', (e) => {
         });
     });
 
+    navSidebar.addEventListener('click', (e) => {
+        e.preventDefault();
+        if (!e.target.classList.contains('nav__item')) return;
+        addActive(e.target, e.currentTarget);
+
+        const footerNav = document.querySelector('.nav--footer');
+        const [...footerLinks] = footerNav.querySelectorAll('.nav__item');
+
+        const neededEl = footerLinks.find((link) => link.href === e.target.href);
+
+        addActive(neededEl, footerNav);
+
+
+
+
+        const blockId = e.target.getAttribute('href').substring(1);
+
+        if (blockId) {
+            document.getElementById(blockId).scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
+
+        //hide sidebar
+        let bodyS = document.body;
+        bodyS.classList.remove("show-sidebar");
+    });
+
     function addActive(element, parent, classOfItems = 'nav__item') {
         const items = parent.querySelectorAll(`.${classOfItems}`);
         items.forEach((item) => {
@@ -54,14 +83,4 @@ document.addEventListener('DOMContentLoaded', (e) => {
         });
         element.classList.add('active');
     }
-
-
-
-    //Номерація в dd.d-list
-    const dList = document.querySelector('.d-list');
-    const [...dListItems] = dList.children;
-
-    dListItems.forEach((item) => {
-        const dtAfter = item.querySelector('');
-    });
 });

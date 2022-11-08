@@ -5,6 +5,10 @@
   overflow: hidden;
   flex-shrink: 0;
 
+  @include tablet {
+    margin-left: 6rem;
+  }
+
   img {
     @extend .img-contain;
   }

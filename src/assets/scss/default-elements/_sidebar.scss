@@ -1,12 +1,14 @@
 .sidebar {
   width: 300px;
-  height: calc(100vh - 4rem);
+  height: calc(100vh - 9.4rem);
   padding: 2rem;
 
   position: absolute;
+  bottom: 0;
+  left: 0;
   z-index: 4;
 
-  background-color: #ccc;
+  background-color: #fff;
   transform: translateX(-101%);
   transition: transform .3s linear;
 
