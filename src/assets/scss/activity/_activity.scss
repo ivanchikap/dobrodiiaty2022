@@ -14,7 +14,22 @@
   }
 
   &__slider {
+    position: relative;
     padding: 3rem 0 1.8rem 0;
+    z-index: 2;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 1rem;
+      left: -5rem;
+      opacity: .4;
+      display: block;
+      width: 26.7rem;
+      height: 26.7rem;
+      background: url("../images/zarka.png") no-repeat center / cover;
+      z-index: -1;
+    }
   }
 
   &__info {
