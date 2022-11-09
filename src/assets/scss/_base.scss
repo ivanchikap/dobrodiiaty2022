@@ -88,6 +88,10 @@ h2 {
   color: $black-light;
   position: relative;
 
+  @include laptop {
+    font-size: 2.8rem;
+  }
+
   span:last-child {
     position: relative;
     display: block;

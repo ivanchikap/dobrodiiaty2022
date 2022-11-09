@@ -6233,7 +6233,7 @@ readers do not read off random characters that represent icons */
 }
 @media screen and (max-width: 992px) {
   .container {
-    max-width: 720px;
+    max-width: 744px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -7685,6 +7685,11 @@ h2 {
   color: #0B1B35;
   position: relative;
 }
+@media screen and (max-width: 1200px) {
+  h2 {
+    font-size: 2.8rem;
+  }
+}
 h2 span:last-child {
   position: relative;
   display: block;
@@ -7734,7 +7739,7 @@ h2 span:last-child::after {
   color: transparent;
   position: absolute;
   top: 50%;
-  left: 1.5rem;
+  left: 2rem;
   transform: translateY(-50%);
   background: none;
   border: none;
@@ -7831,7 +7836,7 @@ h2 span:last-child::after {
   flex-shrink: 0;
 }
 @media screen and (max-width: 992px) {
-  .logo {
+  .logo--header {
     margin-left: 6rem;
   }
 }
@@ -7867,7 +7872,13 @@ h2 span:last-child::after {
   margin-bottom: 0;
 }
 .nav--footer {
-  max-width: 70%;
+  max-width: calc(100% - 20rem);
+  justify-content: flex-end;
+}
+@media screen and (max-width: 992px) {
+  .nav--footer {
+    display: flex;
+  }
 }
 .nav__item {
   position: relative;
@@ -7940,6 +7951,12 @@ h2 span:last-child::after {
   padding-top: 9rem;
   padding-bottom: 9rem;
 }
+@media screen and (max-width: 1200px) {
+  .slider .slick-track {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+}
 .slider__item img {
   transition-delay: 0.7s;
   transition: all 1s ease-in-out;
@@ -7954,6 +7971,11 @@ h2 span:last-child::after {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
   background-color: #FFEF5E;
 }
+@media screen and (max-width: 1200px) {
+  .slider__item.slick-center {
+    transform: scale(1.24);
+  }
+}
 .slider__item.slick-center img {
   transform: translate(-2px, -2px);
 }
@@ -7963,6 +7985,11 @@ h2 span:last-child::after {
   padding: 2px;
   background-clip: content-box;
   height: 33rem;
+}
+@media screen and (max-width: 1200px) {
+  .slider__img {
+    height: 28rem;
+  }
 }
 .slider__img img {
   border-radius: 1.2rem;
@@ -8025,6 +8052,11 @@ h2 span:last-child::after {
   border-top: 1px solid #000;
   border-right: 1px solid #000;
 }
+@media screen and (max-width: 1200px) {
+  .card__info-inner {
+    padding: 1rem 1.2rem 1rem 1rem;
+  }
+}
 .card__info-inner::after {
   content: "";
   position: absolute;
@@ -8063,11 +8095,21 @@ h2 span:last-child::after {
   min-height: 4.5rem;
   overflow: hidden;
 }
+@media screen and (max-width: 1200px) {
+  .card h6 {
+    min-height: 6rem;
+  }
+}
 .card p {
   font-size: 1.2rem;
   margin-top: 1rem;
   min-height: 6.4rem;
   overflow: hidden;
+}
+@media screen and (max-width: 1200px) {
+  .card p {
+    min-height: 8rem;
+  }
 }
 .card__photo {
   position: relative;
@@ -8104,6 +8146,11 @@ h2 span:last-child::after {
 .t-slider__item {
   display: flex;
   padding: 0 1.9rem;
+}
+@media screen and (max-width: 1200px) {
+  .t-slider__item {
+    padding: 0 0.9rem;
+  }
 }
 .t-slider .slick-prev, .t-slider .slick-next {
   position: absolute;
@@ -8265,6 +8312,11 @@ h2 span:last-child::after {
   align-items: center;
   flex-shrink: 0;
 }
+@media screen and (max-width: 992px) {
+  .header__actions {
+    max-width: 62%;
+  }
+}
 .header__login {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -8335,7 +8387,12 @@ h2 span:last-child::after {
 }
 .activity h5, .activity h6 {
   text-align: center;
-  margin-bottom: 2.2rem;
+  margin-bottom: 1.2rem;
+}
+@media screen and (max-width: 1200px) {
+  .activity h5, .activity h6 {
+    margin-bottom: 0;
+  }
 }
 .activity__slider {
   position: relative;
@@ -8356,6 +8413,11 @@ h2 span:last-child::after {
 }
 .activity__info {
   padding-left: 3rem;
+}
+@media screen and (max-width: 1200px) {
+  .activity__info {
+    padding-left: 2rem;
+  }
 }
 
 .team {

@@ -34,7 +34,12 @@
   }
 
   &--footer {
-    max-width: 70%;
+    max-width: calc(100% - 20rem);
+    justify-content: flex-end;
+
+    @include tablet {
+      display: flex;
+    }
   }
 
   &__item {

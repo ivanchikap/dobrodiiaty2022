@@ -21,6 +21,10 @@
     border-top: 1px solid $black;
     border-right: 1px solid $black;
 
+    @include laptop {
+      padding: 1rem 1.2rem 1rem 1rem;
+    }
+
     &::after {
       content: '';
       position: absolute;
@@ -53,7 +57,6 @@
     overflow: hidden;
   }
 
-
   h5 {
     @extend .text-overflow;
   }
@@ -67,6 +70,10 @@
     margin-top: 0.6rem;
     min-height: 4.5rem;
     overflow: hidden;
+
+    @include laptop {
+      min-height: 6rem;
+    }
   }
 
   p {
@@ -74,6 +81,10 @@
     margin-top: 1rem;
     min-height: 6.4rem;
     overflow: hidden;
+
+    @include laptop {
+      min-height: 8rem;
+    }
   }
 
   &__photo {

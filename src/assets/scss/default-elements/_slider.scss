@@ -4,6 +4,11 @@
   .slick-track {
     padding-top: 9rem;
     padding-bottom: 9rem;
+
+    @include laptop {
+      padding-top: 7rem;
+      padding-bottom: 7rem;
+    }
   }
 
   &__item {
@@ -23,6 +28,10 @@
       box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
       background-color: $yellow;
 
+      @include laptop {
+        transform: scale(1.24);
+      }
+
       img {
         transform: translate(-2px, -2px);
       }
@@ -35,6 +44,10 @@
     padding: 2px;
     background-clip: content-box;
     height: 33rem;
+
+    @include laptop {
+      height: 28rem;
+    }
 
     img {
       border-radius: 1.2rem;
