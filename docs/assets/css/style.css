@@ -6244,7 +6244,7 @@ readers do not read off random characters that represent icons */
 
 @media screen and (max-width: 992px) {
     .container {
-        max-width: 720px;
+        max-width: 744px;
     }
 }
 
@@ -8093,6 +8093,12 @@ h2 {
     position: relative;
 }
 
+@media screen and (max-width: 1200px) {
+    h2 {
+        font-size: 2.8rem;
+    }
+}
+
 h2 span:last-child {
     position: relative;
     display: block;
@@ -8144,7 +8150,7 @@ h2 span:last-child::after {
     color: transparent;
     position: absolute;
     top: 50%;
-    left: 1.5rem;
+    left: 2rem;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     background: none;
@@ -8271,7 +8277,7 @@ h2 span:last-child::after {
 }
 
 @media screen and (max-width: 992px) {
-    .logo {
+    .logo--header {
         margin-left: 6rem;
     }
 }
@@ -8321,7 +8327,16 @@ h2 span:last-child::after {
 }
 
 .nav--footer {
-    max-width: 70%;
+    max-width: calc(100% - 20rem);
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 992px) {
+    .nav--footer {
+        display: -ms-flexbox;
+        display: flex;
+    }
 }
 
 .nav__item {
@@ -8360,26 +8375,26 @@ h2 span:last-child::after {
     text-decoration: none;
 }
 
-.list--yellow {
+.list--yellow.list {
     margin-bottom: 2rem;
 }
 
-.list--yellow .list__item {
+.list--yellow.list li {
     line-height: 1.56;
 }
 
-.list--yellow .list__item::before {
+.list--yellow.list li::before {
     width: 3.4rem;
     height: 2.7rem;
     margin-right: 0.9rem;
     background: url("../images/star-yellow.png") no-repeat center/contain;
 }
 
-.list--yellow .list__item + li {
+.list--yellow.list li + li {
     margin-top: 1.1rem;
 }
 
-.list__item {
+.list li {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
@@ -8388,7 +8403,7 @@ h2 span:last-child::after {
     line-height: 1.1;
 }
 
-.list__item::before {
+.list li::before {
     content: "";
     display: block;
     -ms-flex-negative: 0;
@@ -8399,7 +8414,7 @@ h2 span:last-child::after {
     background: url("../images/star.png") no-repeat center/contain;
 }
 
-.list__item + .list__item {
+.list li + li {
     margin-top: 1.8rem;
 }
 
@@ -8410,6 +8425,13 @@ h2 span:last-child::after {
 .slider .slick-track {
     padding-top: 9rem;
     padding-bottom: 9rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .slider .slick-track {
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+    }
 }
 
 .slider__item img {
@@ -8432,6 +8454,13 @@ h2 span:last-child::after {
     background-color: #FFEF5E;
 }
 
+@media screen and (max-width: 1200px) {
+    .slider__item.slick-center {
+        -webkit-transform: scale(1.24);
+        transform: scale(1.24);
+    }
+}
+
 .slider__item.slick-center img {
     -webkit-transform: translate(-2px, -2px);
     transform: translate(-2px, -2px);
@@ -8443,6 +8472,12 @@ h2 span:last-child::after {
     padding: 2px;
     background-clip: content-box;
     height: 33rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .slider__img {
+        height: 28rem;
+    }
 }
 
 .slider__img img {
@@ -8521,6 +8556,12 @@ h2 span:last-child::after {
     border-right: 1px solid #000;
 }
 
+@media screen and (max-width: 1200px) {
+    .card__info-inner {
+        padding: 1rem 1.2rem 1rem 1rem;
+    }
+}
+
 .card__info-inner::after {
     content: "";
     position: absolute;
@@ -8566,11 +8607,23 @@ h2 span:last-child::after {
     overflow: hidden;
 }
 
+@media screen and (max-width: 1200px) {
+    .card h6 {
+        min-height: 6rem;
+    }
+}
+
 .card p {
     font-size: 1.2rem;
     margin-top: 1rem;
     min-height: 6.4rem;
     overflow: hidden;
+}
+
+@media screen and (max-width: 1200px) {
+    .card p {
+        min-height: 8rem;
+    }
 }
 
 .card__photo {
@@ -8613,6 +8666,12 @@ h2 span:last-child::after {
     display: -ms-flexbox;
     display: flex;
     padding: 0 1.9rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .t-slider__item {
+        padding: 0 0.9rem;
+    }
 }
 
 .t-slider .slick-prev, .t-slider .slick-next {
@@ -8814,6 +8873,12 @@ h2 span:last-child::after {
     flex-shrink: 0;
 }
 
+@media screen and (max-width: 992px) {
+    .header__actions {
+        max-width: 62%;
+    }
+}
+
 .header__login {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
@@ -8898,7 +8963,13 @@ h2 span:last-child::after {
 
 .activity h5, .activity h6 {
     text-align: center;
-    margin-bottom: 2.2rem;
+    margin-bottom: 1.2rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .activity h5, .activity h6 {
+        margin-bottom: 0;
+    }
 }
 
 .activity__slider {
@@ -8922,6 +8993,12 @@ h2 span:last-child::after {
 
 .activity__info {
     padding-left: 3rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .activity__info {
+        padding-left: 2rem;
+    }
 }
 
 .team {
