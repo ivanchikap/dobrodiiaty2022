@@ -8099,13 +8099,13 @@ h2 {
     }
 }
 
-h2 span:last-child {
+h2 p:last-child {
     position: relative;
     display: block;
     z-index: 3;
 }
 
-h2 span:last-child::after {
+h2 p:last-child::after {
     content: "";
     display: block;
     width: 28.6rem;
