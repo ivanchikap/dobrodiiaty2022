@@ -7,7 +7,7 @@
     max-width: 960px;
   }
   @include tablet {
-    max-width: 744px;
+    max-width: 784px;
   }
   @include mobile-large {
     max-width: 540px;
@@ -29,8 +29,8 @@
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+  margin-right: -20px;
+  margin-left: -20px;
   @include mobile {
     margin-right: -10px;
     margin-left: -10px;

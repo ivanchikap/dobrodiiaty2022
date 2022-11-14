@@ -6244,11 +6244,11 @@ readers do not read off random characters that represent icons */
 
 @media screen and (max-width: 992px) {
     .container {
-        max-width: 744px;
+        max-width: 784px;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 814px) {
     .container {
         max-width: 540px;
     }
@@ -6277,8 +6277,8 @@ readers do not read off random characters that represent icons */
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
+    margin-right: -20px;
+    margin-left: -20px;
 }
 
 @media screen and (max-width: 576px) {
@@ -6690,7 +6690,7 @@ readers do not read off random characters that represent icons */
     margin-bottom: auto;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 814px) {
     .mx-sm-auto {
         margin-left: auto;
         margin-right: auto;
@@ -7401,7 +7401,7 @@ readers do not read off random characters that represent icons */
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 814px) {
     .col-sm {
         -ms-flex-preferred-size: 0;
         flex-basis: 0;

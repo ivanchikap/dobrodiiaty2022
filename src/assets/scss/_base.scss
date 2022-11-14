@@ -61,7 +61,16 @@ h1 {
     font-size: 5.2rem;
   }
 
+  @include tablet {
+    font-size: 5rem;
+  }
+
   span {
+
+    &:first-child {
+      display: block;
+    }
+
     &:last-child {
       position: relative;
       z-index: 3;
