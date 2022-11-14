@@ -8291,7 +8291,7 @@ h2 span:last-child::after {
 
 @media screen and (max-width: 780px) {
     .sidebar {
-        max-width: 37.5rem;
+        max-width: 103%;
         width: 103%;
         left: -5px;
         padding: 4rem 3rem 2rem 3rem;
