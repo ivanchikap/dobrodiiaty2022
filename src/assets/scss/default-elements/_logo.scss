@@ -7,7 +7,8 @@
 
   &--header {
     @include tablet {
-      margin-left: 10rem;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 

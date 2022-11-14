@@ -2,17 +2,24 @@
   display: flex;
   justify-content: space-between;
   padding: 4rem 5rem 3rem 5rem;
-  min-width: 44.6rem;
+  width: 44.6rem;
   height: auto;
 
   position: absolute;
-  top: 99%;
+  top: 105%;
   left: 0;
   z-index: 4;
 
+  box-shadow: 0 12px 38px rgba(0, 0, 0, 0.15);
   background-color: #fff;
-  transform: translateX(-130%);
-  transition: transform .3s linear;
+  transform: translateX(-350%);
+  transition: transform .5s linear;
+
+  @include mobile-large {
+    max-width: 100%;
+    width: auto;
+    padding: 4rem 5rem 2rem 5rem;
+  }
 
   .show-sidebar & {
     transform: translateX(0);
