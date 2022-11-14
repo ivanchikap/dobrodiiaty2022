@@ -8035,6 +8035,12 @@ main {
     }
 }
 
+@media screen and (max-width: 992px) {
+    main {
+        padding: 2.2rem 0 0 0;
+    }
+}
+
 footer {
     margin-top: auto;
 }
@@ -8285,9 +8291,17 @@ h2 span:last-child::after {
 
 @media screen and (max-width: 780px) {
     .sidebar {
-        max-width: 100%;
-        width: auto;
-        padding: 4rem 5rem 2rem 5rem;
+        max-width: 37.5rem;
+        width: 103%;
+        left: -5px;
+        padding: 4rem 3rem 2rem 3rem;
+        background-color: #CFC4ED;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .sidebar {
+        padding: 3rem 2rem 1.5rem 1.5rem;
     }
 }
 
@@ -8300,9 +8314,21 @@ h2 span:last-child::after {
     width: 70%;
 }
 
+@media screen and (max-width: 780px) {
+    .sidebar__left {
+        width: 74%;
+    }
+}
+
 .sidebar__right {
     width: 30%;
     padding-left: 1rem;
+}
+
+@media screen and (max-width: 780px) {
+    .sidebar__right {
+        width: 26%;
+    }
 }
 
 .sidebar__social {
@@ -8380,9 +8406,8 @@ h2 span:last-child::after {
     font-size: 2rem;
 }
 
-.nav--sidebar .nav__item--page:nth-child(1) {
-    font-size: 4rem;
-    margin-bottom: 2.4rem;
+.nav--sidebar .nav__item--page:not(:last-child) {
+    margin-top: 1.2rem;
 }
 
 .nav--footer {
@@ -8904,6 +8929,12 @@ h2 span:last-child::after {
     }
 }
 
+@media screen and (max-width: 992px) {
+    .header {
+        padding-bottom: 4.3rem;
+    }
+}
+
 .header__top {
     position: relative;
     z-index: 4;
@@ -8946,6 +8977,12 @@ h2 span:last-child::after {
     -ms-flex-negative: 0;
     flex-shrink: 0;
     margin-right: 1.5rem;
+}
+
+@media screen and (max-width: 780px) {
+    .sidebar .header__login {
+        color: #FFEF5E;
+    }
 }
 
 .intro {
@@ -9102,6 +9139,19 @@ h2 span:last-child::after {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     background-image: linear-gradient(to right, #F2EFFA 0, #F2EFFA 51%, #fff 51%, #fff 100%);
+}
+
+@media screen and (max-width: 992px) {
+    .activity {
+        background-image: linear-gradient(to top, #F2EFFA 0, #F2EFFA 51%, #fff 51%, #fff 100%);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .activity .row .col-6:first-child {
+        -ms-flex-order: 2;
+        order: 2;
+    }
 }
 
 .activity h2 {
