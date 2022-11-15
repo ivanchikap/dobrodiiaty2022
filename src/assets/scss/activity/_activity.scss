@@ -57,6 +57,10 @@
       height: 26.7rem;
       background: url("../images/zarka.png") no-repeat center / cover;
       z-index: -1;
+
+      @include tablet {
+        left: -2rem;
+      }
     }
   }
 

@@ -93,7 +93,6 @@ document.addEventListener('DOMContentLoaded', (e) => {
     const sliderHeight = Number.parseFloat(window.getComputedStyle(activitySlider, null).height);
 
     const percentage = Number.parseInt((sliderHeight/activityHeight)*100);
-    console.log(activityHeight, sliderHeight, percentage);
 
     const screenWidth = window.screen.width;
     if (screenWidth < 993) {

@@ -9,18 +9,21 @@
       padding-top: 7rem;
       padding-bottom: 7rem;
     }
-  }
 
-  &__item {
-    img {
-      transition-delay: .7s;
-      transition: all 1s ease-in-out;
+    @include tablet {
+      padding-top: 9rem;
+      padding-bottom: 11rem;
     }
   }
 
   &__item {
     border-radius: 1.2rem;
     transition: transform .3s linear;
+
+    img {
+      transition-delay: .7s;
+      transition: all 1s ease-in-out;
+    }
 
     &.slick-center {
       z-index: 11;
@@ -69,6 +72,10 @@
     border-radius: 50%;
     color: transparent;
     font-size: 0;
+
+    @include tablet {
+      bottom: 2rem;
+    }
 
     &::before {
       content: '';
