@@ -83,4 +83,20 @@ document.addEventListener('DOMContentLoaded', (e) => {
         });
         element.classList.add('active');
     }
+
+    //calculate gradient in activity section
+    const activity = document.getElementById('activity');
+    const activitySlider = document.querySelector('.activity__slider');
+
+    const activityHeight = Number.parseFloat(window.getComputedStyle(activity, null).height);
+
+    const sliderHeight = Number.parseFloat(window.getComputedStyle(activitySlider, null).height);
+
+    const percentage = Number.parseInt((sliderHeight/activityHeight)*100);
+    console.log(activityHeight, sliderHeight, percentage);
+
+    const screenWidth = window.screen.width;
+    if (screenWidth < 993) {
+        activity.style.backgroundImage = `linear-gradient(to top, #f2effa 0, #f2effa ${percentage}%, #fff ${percentage}%, #fff 100%)`;
+    }
 });

@@ -5,11 +5,13 @@
   background-image: linear-gradient(to right, $gray 0, $gray 51%, #fff 51%, #fff 100%);
 
   @include tablet {
-    background-image: linear-gradient(to top, $gray 0, $gray 51%, #fff 51%, #fff 100%);
+    background-image: linear-gradient(to top, $gray 0, $gray 56%, #fff 56%, #fff 100%);
   }
+
 
   .row {
     .col-6:first-child {
+      overflow: hidden;
 
       @include tablet {
         order: 2;
@@ -19,6 +21,10 @@
 
   h2 {
     margin-bottom: 3.2rem;
+
+    @include tablet {
+      margin-bottom: 2rem;
+    }
   }
   
   h5, h6 {
@@ -27,11 +33,16 @@
     @include laptop {
       margin-bottom: 0;
     }
+
+    @include tablet {
+      max-width: 82%;
+      margin: 0 auto;
+    }
   }
 
   &__slider {
     position: relative;
-    padding: 3rem 0 1.8rem 0;
+    padding: 3.5rem 0 1.8rem 0;
     z-index: 2;
 
     &::after {
@@ -53,6 +64,11 @@
 
     @include laptop {
       padding-left: 2rem;
+    }
+
+    @include tablet {
+      padding-left: 0;
+      padding-bottom: 6rem;
     }
   }
 }

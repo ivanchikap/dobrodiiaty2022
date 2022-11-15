@@ -49,6 +49,10 @@
       height: 28rem;
     }
 
+    @include tablet {
+      height: 35.7rem;
+    }
+
     img {
       border-radius: 1.2rem;
       @extend .img-cover;
