@@ -9151,6 +9151,7 @@ h2 span:last-child::after {
     align-items: center;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    overflow-x: hidden;
     background-image: linear-gradient(to right, #F2EFFA 0, #F2EFFA 51%, #fff 51%, #fff 100%);
 }
 
