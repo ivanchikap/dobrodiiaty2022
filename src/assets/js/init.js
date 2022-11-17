@@ -46,7 +46,17 @@ $( document ).ready(function() {
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    centerPadding: '10px',
+                    centerPadding: '80px',
+                    arrows: false
+                }
+            },
+
+            {
+                breakpoint: 460,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    centerPadding: '40px',
                     arrows: false
                 }
             },

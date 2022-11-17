@@ -1,6 +1,11 @@
 .t-slider {
   padding-bottom: 6rem;
-  margin: 0 -1.9rem;
+  margin: 0 -2rem;
+
+  @include mobile {
+    margin: 0 -1rem;
+    padding-bottom: 4rem;
+  }
 
   &__item {
     display: flex;

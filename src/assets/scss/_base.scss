@@ -27,14 +27,14 @@ body {
 
 }
 main {
-  padding: 7rem 0 9rem 0;
+  padding: 7rem 0 2rem 0;
 
   @include laptop {
-    padding: 5rem 0 7rem 0;
+    padding: 5rem 0 ;
   }
 
   @include tablet {
-    padding: 2.2rem 0 0 0;
+    padding: 2.2rem 0;
   }
 
   @include mobile {
@@ -44,6 +44,12 @@ main {
 
 footer {
   margin-top: auto;
+}
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
 }
 
 strong {

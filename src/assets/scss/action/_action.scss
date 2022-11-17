@@ -1,7 +1,32 @@
 .action {
   $root: &;
-  padding-top: 1.6rem;
-  padding-bottom: 2.6rem;
+  padding-top: 11.6rem;
+  padding-bottom: 10rem;
+  overflow: hidden;
+
+  @include laptop {
+    padding-top: 11.6rem;
+  }
+
+  .container {
+    @include tablet {
+      max-width: 100%;
+      width: 100%;
+      padding: 0;
+    }
+
+    @include mobile-large {
+      max-width: 100%;
+      width: 100%;
+      padding: 0;
+    }
+
+    @include mobile {
+      max-width: 100%;
+      width: 100%;
+      padding: 0;
+    }
+  }
 
   &__group {
     position: relative;
@@ -47,7 +72,7 @@
   &__head {
     cursor: pointer;
     position: relative;
-    width: 75.5%;
+    width: 78%;
     padding: 1.4rem 26rem 1.4rem 5.8rem;
     background-color: $purple;
     min-height: 9.5rem;
@@ -55,6 +80,7 @@
     @include laptop {
       padding: 1rem 26rem 1rem 2.8rem;
       min-height: 8rem;
+      width: 100%;
     }
 
     h5 {
@@ -64,6 +90,14 @@
       line-height: 1.6;
       color: $black;
       @extend .text-overflow;
+
+      @include mobile-large {
+        font-size: 2.2rem;
+      }
+
+      @include mobile {
+        font-size: 1.7rem;
+      }
     }
 
     span {
@@ -77,10 +111,10 @@
       width: 2.19rem;
       height: 2.19rem;
       position: absolute;
-      right: 22rem;
+      right: 21rem;
       top: 50%;
-      border-top: 1px solid $white;
-      border-right: 1px solid $white;
+      border-top: 1px solid $black;
+      border-right: 1px solid $black;
       transform: translateY(-50%) rotate(45deg);
       transition: transform .3s linear;
     }
@@ -92,9 +126,9 @@
     color: $black;
     max-height: 0;
     overflow: hidden;
-    width: 75.5%;
+    width: 78%;
     transition: max-height .5s linear, padding .1s linear;
-    padding: 0 15rem 0 5.8rem;
+    padding: 0 18.5rem 0 5.8rem;
     background-color: $purple;
     transform: translateY(-12px);
 
@@ -127,10 +161,6 @@
   }
 
   &__title {
-    font-family: $comfortaa;
-    font-weight: 700;
-    font-size: 2rem;
-    line-height: 1.5;
-    color: $black;
+
   }
 }
