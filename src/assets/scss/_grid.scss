@@ -57,6 +57,11 @@
   flex-shrink: 0;
   padding-right: 20px;
   padding-left: 20px;
+
+  @include mobile {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
 }
 
 .col {

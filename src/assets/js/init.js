@@ -3,8 +3,17 @@ $( document ).ready(function() {
         centerMode: true,
         centerPadding: '',
         slidesToShow: 3,
+        infinite: true,
         responsive: [
-
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    centerPadding: '72px',
+                    arrows: false
+                }
+            },
         ]
     });
 

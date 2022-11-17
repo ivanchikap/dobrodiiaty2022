@@ -26,6 +26,10 @@
     font-size: 1.8rem;
     line-height: 1.1;
 
+    @include mobile {
+      font-size: 1.6rem;
+    }
+
     &::before {
       content: '';
       display: block;

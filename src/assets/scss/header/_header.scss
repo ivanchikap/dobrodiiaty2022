@@ -10,6 +10,10 @@
     padding-bottom: 4.3rem;
   }
 
+  @include mobile {
+    border-bottom: none;
+  }
+
   &__top {
     position: relative;
     z-index: 4;
@@ -44,10 +48,19 @@
     flex-shrink: 0;
     margin-right: 1.5rem;
     @extend .text-overflow;
+    transition: color .2s linear;
+
+    &:hover {
+      color: $yellow;
+    }
 
     .sidebar & {
       @include mobile-large {
         color: $yellow;
+
+        &:hover {
+          color: $black;
+        }
       }
     }
   }

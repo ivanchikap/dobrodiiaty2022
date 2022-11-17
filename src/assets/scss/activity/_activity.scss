@@ -46,6 +46,10 @@
     padding: 3.5rem 0 1.8rem 0;
     z-index: 2;
 
+    @include mobile-large {
+      padding: 3.5rem 0 0.8rem 0;
+    }
+
     &::after {
       content: '';
       position: absolute;
@@ -74,6 +78,21 @@
     @include tablet {
       padding-left: 0;
       padding-bottom: 6rem;
+    }
+
+    @include mobile-large {
+      padding-bottom: 4rem;
+    }
+  }
+
+  &__action {
+    display: none;
+    max-width: 80%;
+    margin: 0 auto 3.4rem auto;
+
+    @include mobile {
+      display: block;
+      text-align: center;
     }
   }
 }

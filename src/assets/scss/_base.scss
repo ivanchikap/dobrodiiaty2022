@@ -36,6 +36,10 @@ main {
   @include tablet {
     padding: 2.2rem 0 0 0;
   }
+
+  @include mobile {
+    padding: 0;
+  }
 }
 
 footer {
@@ -105,25 +109,45 @@ h2 {
   color: $black-light;
   position: relative;
 
-  @include laptop {
-    font-size: 2.8rem;
+  @include tablet {
+    text-align: center;
   }
 
-  span:last-child {
-    position: relative;
-    display: block;
-    z-index: 3;
+  @include mobile-large {
+    font-size: 2.8rem;
+  }
+  
+  @include mobile {
+    text-align: left;
+    font-size: 2.2rem;
+  }
 
-    &::after {
-      content: '';
+
+  span {
+
+    &:first-child {
       display: block;
-      width: 28.6rem;
-      height: 0.9rem;
-      background-color: $yellow;
-      position: absolute;
-      left: 0;
-      top: 2.5rem;
-      z-index: -1;
+    }
+
+    &:last-child {
+      position: relative;
+      z-index: 3;
+
+      &::after {
+        content: '';
+        display: block;
+        width: 28.6rem;
+        height: 0.9rem;
+        background-color: $yellow;
+        position: absolute;
+        left: 0;
+        top: 2.5rem;
+        z-index: -1;
+
+        @include tablet {
+          width: 100%;
+        }
+      }
     }
   }
 }

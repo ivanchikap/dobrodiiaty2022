@@ -14,6 +14,16 @@
       padding-top: 9rem;
       padding-bottom: 11rem;
     }
+
+    @include mobile-large {
+      padding-top: 7rem;
+      padding-bottom: 9rem;
+    }
+
+    @include mobile {
+      padding-top: 6.6rem;
+      padding-bottom: 8rem;
+    }
   }
 
   &__item {
@@ -54,6 +64,14 @@
 
     @include tablet {
       height: 35.7rem;
+    }
+
+    @include mobile-large {
+      height: 28rem;
+    }
+
+    @include mobile {
+      height: 33.1rem;
     }
 
     img {
