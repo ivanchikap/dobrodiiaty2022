@@ -1,7 +1,11 @@
 .card {
   $root: &;
-  max-width: 42rem;
+  //max-width: 42rem;
   color: $black-light;
+
+  @include mobile {
+    //max-width: ;
+  }
 
   &__info {
     padding: 1.2rem 1.2rem 0 1.2rem;
@@ -15,14 +19,14 @@
 
   &__info-inner {
     position: relative;
-    padding: 1.6rem 1.8rem 1rem 1.6rem;
+    padding: 1.8rem 1.7rem 1rem 1.7rem;
     background: $white;
     border-left: 1px solid $black;
     border-top: 1px solid $black;
     border-right: 1px solid $black;
 
     @include laptop {
-      padding: 1rem 1.2rem 1rem 1rem;
+      padding: 1.8rem 1.4rem 1rem 1.4rem;
     }
 
     &::after {
@@ -84,6 +88,10 @@
 
     @include laptop {
       min-height: 8rem;
+    }
+
+    @include mobile-large {
+      min-height: 9.6rem;
     }
   }
 

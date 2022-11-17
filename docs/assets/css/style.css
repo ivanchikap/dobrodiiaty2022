@@ -8749,7 +8749,6 @@ h2 span:last-child::after {
 }
 
 .card {
-    max-width: 42rem;
     color: #0B1B35;
 }
 
@@ -8765,7 +8764,7 @@ h2 span:last-child::after {
 
 .card__info-inner {
     position: relative;
-    padding: 1.6rem 1.8rem 1rem 1.6rem;
+    padding: 1.8rem 1.7rem 1rem 1.7rem;
     background: #fff;
     border-left: 1px solid #000;
     border-top: 1px solid #000;
@@ -8774,7 +8773,7 @@ h2 span:last-child::after {
 
 @media screen and (max-width: 1200px) {
     .card__info-inner {
-        padding: 1rem 1.2rem 1rem 1rem;
+        padding: 1.8rem 1.4rem 1rem 1.4rem;
     }
 }
 
@@ -8839,6 +8838,12 @@ h2 span:last-child::after {
 @media screen and (max-width: 1200px) {
     .card p {
         min-height: 8rem;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .card p {
+        min-height: 9.6rem;
     }
 }
 
