@@ -21,6 +21,7 @@
 
   dt {
     display: flex;
+    align-items: center;
     flex-shrink: 0;
 
     span {
@@ -31,6 +32,10 @@
       line-height: 1;
       color: $black;
       height: 100%;
+
+      @include mobile-large {
+        font-size: 1.5rem;
+      }
 
       &:last-child {
         position: relative;
@@ -66,5 +71,9 @@
     font-size: 1.8rem;
     line-height: 1.56;
     color: $black;
+
+    @include mobile-large {
+      font-size: 1rem;
+    }
   }
 }

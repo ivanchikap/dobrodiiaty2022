@@ -8,6 +8,18 @@
   background-color: $yellow;
   box-shadow: 0 -3px 100px rgba($black, .25);
 
+  @include tablet {
+    height: 31.2rem;
+    width: 31.2rem;
+  }
+
+  @include mobile-large {
+    height: 20rem;
+    width: 20rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
 
   &::after {
     content: '';
@@ -20,7 +32,6 @@
     background: $gray;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   }
-
 
   &__img {
     position: absolute;
