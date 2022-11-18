@@ -9030,6 +9030,13 @@ h2 span:last-child::after {
     box-shadow: 0 -3px 100px rgba(0, 0, 0, 0.25);
 }
 
+@media screen and (max-width: 1200px) {
+    .circle {
+        height: 41.2rem;
+        width: 41.2rem;
+    }
+}
+
 @media screen and (max-width: 992px) {
     .circle {
         height: 31.2rem;

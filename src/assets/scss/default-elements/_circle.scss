@@ -8,6 +8,11 @@
   background-color: $yellow;
   box-shadow: 0 -3px 100px rgba($black, .25);
 
+  @include laptop {
+    height: 41.2rem;
+    width: 41.2rem;
+  }
+
   @include tablet {
     height: 31.2rem;
     width: 31.2rem;
