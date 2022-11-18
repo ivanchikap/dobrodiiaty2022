@@ -20,10 +20,12 @@ document.addEventListener('DOMContentLoaded', (e) => {
 
         const blockId = e.target.getAttribute('href').substring(1);
 
-        document.getElementById(blockId).scrollIntoView({
-            behavior: "smooth",
-            block: "start"
-        });
+        if (blockId) {
+            document.getElementById(blockId).scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
     });
 
     navFooter.addEventListener('click', (e) => {
@@ -41,10 +43,13 @@ document.addEventListener('DOMContentLoaded', (e) => {
 
         const blockId = e.target.getAttribute('href').substring(1);
 
-        document.getElementById(blockId).scrollIntoView({
-            behavior: "smooth",
-            block: "start"
-        });
+
+        if (blockId) {
+            document.getElementById(blockId).scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
     });
 
     navSidebar.addEventListener('click', (e) => {
