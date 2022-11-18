@@ -40,9 +40,38 @@
   &--footer {
     max-width: calc(100% - 20rem);
     justify-content: flex-end;
+    padding-right: 0;
 
     @include tablet {
       display: flex;
+      flex-direction: column;
+      padding-left: 0;
+    }
+
+    @include mobile {
+      max-width: calc(100% - 14rem);
+    }
+
+    #{$root} {
+      &__item {
+
+        @include tablet {
+          display: none;
+          margin-bottom: 2.2rem;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          &--page {
+            display: inline-block;
+          }
+        }
+
+        @include mobile-large {
+          font-size: 1.5rem;
+        }
+      }
     }
   }
 

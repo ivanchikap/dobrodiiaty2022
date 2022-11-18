@@ -11,13 +11,16 @@
   @include tablet {
     height: 31.2rem;
     width: 31.2rem;
+    box-shadow: 0 -3px 40px rgba($black, .25);
   }
 
   @include mobile-large {
     height: 20rem;
     width: 20rem;
-    top: 50%;
-    transform: translateY(-50%);
+  }
+
+  @include mobile {
+    display: none;
   }
 
 
@@ -31,6 +34,11 @@
     left: 2.5rem;
     background: $gray;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+    @include mobile-large {
+      top: .6rem;
+      left: 1.4rem;
+    }
   }
 
   &__img {

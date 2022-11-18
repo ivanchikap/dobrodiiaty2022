@@ -6,7 +6,11 @@
 
   @include tablet {
     padding-top: 6rem;
-    padding-bottom: 2.5rem;
+    padding-bottom: 1rem;
+  }
+
+  @include mobile-large {
+    padding-top: 4rem;
   }
 
   .container {
@@ -135,6 +139,10 @@
         height: 1.19rem;
         right: 19rem;
       }
+
+      @include mobile {
+        right: 1.5rem;
+      }
     }
   }
 
@@ -149,6 +157,10 @@
     @include mobile-large {
       max-width: 100%;
     }
+
+    @include mobile {
+      padding: 0 1.5rem;
+    }
   }
 
   &__head-inner {
@@ -159,6 +171,10 @@
     @include mobile-large {
       width: 65%;
     }
+
+    @include mobile {
+      width: 100%;
+    }
   }
 
   &__body-inner {
@@ -168,7 +184,11 @@
     }
 
     @include mobile-large {
-      width: 72%;
+      width: 71%;
+    }
+
+    @include mobile {
+      width: 100%;
     }
   }
 
@@ -191,7 +211,7 @@
 
     p, span, a {
       @include mobile-large {
-        font-size: 1rem;
+        font-size: 1.2rem;
       }
     }
 

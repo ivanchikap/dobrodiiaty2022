@@ -1,7 +1,21 @@
 .footer {
   padding: 2.2rem 0;
-
   border-top: 1px solid $violet;
+
+  @include tablet {
+    border-top: none;
+  }
+
+  @include mobile-large {
+    padding: 1.8rem 0;
+  }
+
+  .logo {
+    @include tablet {
+      order: 2;
+    }
+  }
+
   .container {
     display: flex;
     justify-content: space-between;

@@ -12,7 +12,7 @@
     object-fit: contain;
 }
 
-.text-overflow, .action__head h5, .team h2 span, .header__login, .card h5, .nav__item, .btn {
+.text-overflow, .action__head h5, .team h2 span:last-child, .team h2 span, .header__login, .card h5, .nav__item, .btn {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -8182,6 +8182,7 @@ h2 span:last-child::after {
 @media screen and (max-width: 992px) {
     h2 span:last-child::after {
         width: 100%;
+        min-width: 104px;
     }
 }
 
@@ -8495,12 +8496,43 @@ h2 span:last-child::after {
     max-width: calc(100% - 20rem);
     -ms-flex-pack: end;
     justify-content: flex-end;
+    padding-right: 0;
 }
 
 @media screen and (max-width: 992px) {
     .nav--footer {
         display: -ms-flexbox;
         display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .nav--footer {
+        max-width: calc(100% - 14rem);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .nav--footer .nav__item {
+        display: none;
+        margin-bottom: 2.2rem;
+    }
+
+    .nav--footer .nav__item:last-child {
+        margin-bottom: 0;
+    }
+
+    .nav--footer .nav__item--page {
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .nav--footer .nav__item {
+        font-size: 1.5rem;
     }
 }
 
@@ -8550,7 +8582,8 @@ h2 span:last-child::after {
 
 @media screen and (max-width: 780px) {
     .list--yellow.list li {
-        font-size: 1rem;
+        font-size: 1.2rem;
+        line-height: 1.3;
     }
 }
 
@@ -9001,6 +9034,7 @@ h2 span:last-child::after {
     .circle {
         height: 31.2rem;
         width: 31.2rem;
+        box-shadow: 0 -3px 40px rgba(0, 0, 0, 0.25);
     }
 }
 
@@ -9008,9 +9042,12 @@ h2 span:last-child::after {
     .circle {
         height: 20rem;
         width: 20rem;
-        top: 50%;
-        -webkit-transform: translateY(-50%);
-        transform: translateY(-50%);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .circle {
+        display: none;
     }
 }
 
@@ -9024,6 +9061,13 @@ h2 span:last-child::after {
     left: 2.5rem;
     background: #F2EFFA;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 780px) {
+    .circle::after {
+        top: 0.6rem;
+        left: 1.4rem;
+    }
 }
 
 .circle__img {
@@ -9118,7 +9162,8 @@ h2 span:last-child::after {
 
 @media screen and (max-width: 780px) {
     .d-list dd {
-        font-size: 1rem;
+        font-size: 1.2rem;
+        padding-left: 1rem;
     }
 }
 
@@ -9513,6 +9558,12 @@ h2 span:last-child::after {
     }
 }
 
+@media screen and (max-width: 576px) {
+    .team__header {
+        margin-bottom: 2rem;
+    }
+}
+
 @media screen and (max-width: 780px) {
     .team .btn {
         margin-left: auto;
@@ -9548,7 +9599,7 @@ h2 span:last-child::after {
 @media screen and (max-width: 576px) {
     .team h2 {
         text-align: left;
-        max-width: 90%;
+        max-width: 100%;
     }
 }
 
@@ -9573,7 +9624,13 @@ h2 span:last-child::after {
 @media screen and (max-width: 992px) {
     .action {
         padding-top: 6rem;
-        padding-bottom: 2.5rem;
+        padding-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .action {
+        padding-top: 4rem;
     }
 }
 
@@ -9724,6 +9781,12 @@ h2 span:last-child::after {
     }
 }
 
+@media screen and (max-width: 576px) {
+    .action__head::after {
+        right: 1.5rem;
+    }
+}
+
 @media screen and (max-width: 992px) {
     .action__inner {
         max-width: 784px;
@@ -9735,6 +9798,12 @@ h2 span:last-child::after {
 @media screen and (max-width: 780px) {
     .action__inner {
         max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .action__inner {
+        padding: 0 1.5rem;
     }
 }
 
@@ -9750,6 +9819,12 @@ h2 span:last-child::after {
     }
 }
 
+@media screen and (max-width: 576px) {
+    .action__head-inner {
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 992px) {
     .action__body-inner {
         width: 65%;
@@ -9758,7 +9833,13 @@ h2 span:last-child::after {
 
 @media screen and (max-width: 780px) {
     .action__body-inner {
-        width: 72%;
+        width: 71%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .action__body-inner {
+        width: 100%;
     }
 }
 
@@ -9785,7 +9866,7 @@ h2 span:last-child::after {
 
 @media screen and (max-width: 780px) {
     .action__body p, .action__body span, .action__body a {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -9833,6 +9914,25 @@ h2 span:last-child::after {
 .footer {
     padding: 2.2rem 0;
     border-top: 1px solid #5E2E94;
+}
+
+@media screen and (max-width: 992px) {
+    .footer {
+        border-top: none;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .footer {
+        padding: 1.8rem 0;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .footer .logo {
+        -ms-flex-order: 2;
+        order: 2;
+    }
 }
 
 .footer .container {
