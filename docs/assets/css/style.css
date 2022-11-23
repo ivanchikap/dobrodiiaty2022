@@ -9088,7 +9088,7 @@ h2 span:last-child::after {
     height: 120%;
 }
 
-.d-list div {
+.d-list > div {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: baseline;
@@ -9097,16 +9097,16 @@ h2 span:last-child::after {
     overflow: hidden;
 }
 
-.d-list div:last-child {
+.d-list > div:last-child {
     padding-bottom: 0;
 }
 
-.d-list div:last-child dt span:last-child:after {
+.d-list > div:last-child .dt span:last-child:after {
     content: "";
     display: none;
 }
 
-.d-list dt {
+.d-list .dt {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
@@ -9115,7 +9115,7 @@ h2 span:last-child::after {
     flex-shrink: 0;
 }
 
-.d-list dt span {
+.d-list .dt span {
     display: block;
     font-family: "Comfortaa", cursive;
     font-weight: 700;
@@ -9126,12 +9126,12 @@ h2 span:last-child::after {
 }
 
 @media screen and (max-width: 780px) {
-    .d-list dt span {
+    .d-list .dt span {
         font-size: 1.5rem;
     }
 }
 
-.d-list dt span:last-child {
+.d-list .dt span:last-child {
     position: relative;
     font-family: inherit;
     font-weight: 700;
@@ -9148,7 +9148,7 @@ h2 span:last-child::after {
     margin-left: 0.8rem;
 }
 
-.d-list dt span:last-child:after {
+.d-list .dt span:last-child:after {
     content: "";
     position: absolute;
     top: 105%;
@@ -9158,7 +9158,7 @@ h2 span:last-child::after {
     border-right: 1px dashed #FFEF5E;
 }
 
-.d-list dd {
+.d-list .dd {
     display: -ms-flexbox;
     display: flex;
     padding-left: 1.3rem;
@@ -9168,7 +9168,7 @@ h2 span:last-child::after {
 }
 
 @media screen and (max-width: 780px) {
-    .d-list dd {
+    .d-list .dd {
         font-size: 1.2rem;
         padding-left: 1rem;
     }
