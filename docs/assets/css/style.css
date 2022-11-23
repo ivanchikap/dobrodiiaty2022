@@ -9115,7 +9115,7 @@ h2 span:last-child::after {
     flex-shrink: 0;
 }
 
-.d-list .dt span {
+.d-list .dt div {
     display: block;
     font-family: "Comfortaa", cursive;
     font-weight: 700;
@@ -9126,12 +9126,12 @@ h2 span:last-child::after {
 }
 
 @media screen and (max-width: 780px) {
-    .d-list .dt span {
+    .d-list .dt div {
         font-size: 1.5rem;
     }
 }
 
-.d-list .dt span:last-child {
+.d-list .dt div:last-child {
     position: relative;
     font-family: inherit;
     font-weight: 700;
@@ -9148,7 +9148,7 @@ h2 span:last-child::after {
     margin-left: 0.8rem;
 }
 
-.d-list .dt span:last-child:after {
+.d-list .dt div:last-child:after {
     content: "";
     position: absolute;
     top: 105%;
