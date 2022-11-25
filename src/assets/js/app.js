@@ -93,14 +93,16 @@ document.addEventListener('DOMContentLoaded', (e) => {
     const activity = document.getElementById('activity');
     const activitySlider = document.querySelector('.activity__slider');
 
-    const activityHeight = Number.parseFloat(window.getComputedStyle(activity, null).height);
+    if (activitySlider) {
+        const activityHeight = Number.parseFloat(window.getComputedStyle(activity, null).height);
 
-    const sliderHeight = Number.parseFloat(window.getComputedStyle(activitySlider, null).height);
+        const sliderHeight = Number.parseFloat(window.getComputedStyle(activitySlider, null).height);
 
-    const percentage = Number.parseInt((sliderHeight/activityHeight)*100);
+        const percentage = Number.parseInt((sliderHeight/activityHeight)*100);
 
-    const screenWidth = window.screen.width;
-    if (screenWidth < 993) {
-        activity.style.backgroundImage = `linear-gradient(to top, #f2effa 0, #f2effa ${percentage}%, #fff ${percentage}%, #fff 100%)`;
+        const screenWidth = window.screen.width;
+        if (screenWidth < 993) {
+            activity.style.backgroundImage = `linear-gradient(to top, #f2effa 0, #f2effa ${percentage}%, #fff ${percentage}%, #fff 100%)`;
+        }
     }
 });
