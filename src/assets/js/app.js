@@ -6,7 +6,9 @@ document.addEventListener('DOMContentLoaded', (e) => {
     const navSidebar = document.querySelector('.nav--sidebar');
 
     nav.addEventListener('click', (e) => {
-        e.preventDefault();
+        if (!e.target.classList.contains('nav__item--page')) {
+            e.preventDefault();
+        }
         if (!e.target.classList.contains('nav__item')) return;
         addActive(e.target, e.currentTarget);
 
@@ -20,7 +22,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
 
         const blockId = e.target.getAttribute('href').substring(1);
 
-        if (blockId) {
+        if (!e.target.classList.contains('nav__item--page')) {
             document.getElementById(blockId).scrollIntoView({
                 behavior: "smooth",
                 block: "start"
@@ -28,8 +30,12 @@ document.addEventListener('DOMContentLoaded', (e) => {
         }
     });
 
+
     navFooter.addEventListener('click', (e) => {
-        e.preventDefault();
+        if (!e.target.classList.contains('nav__item--page')) {
+            e.preventDefault();
+        }
+
         if (!e.target.classList.contains('nav__item')) return;
         addActive(e.target, e.currentTarget);
 
@@ -44,7 +50,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
         const blockId = e.target.getAttribute('href').substring(1);
 
 
-        if (blockId) {
+        if (!e.target.classList.contains('nav__item--page')) {
             document.getElementById(blockId).scrollIntoView({
                 behavior: "smooth",
                 block: "start"
@@ -53,7 +59,9 @@ document.addEventListener('DOMContentLoaded', (e) => {
     });
 
     navSidebar.addEventListener('click', (e) => {
-        e.preventDefault();
+        if (!e.target.classList.contains('nav__item--page')) {
+            e.preventDefault();
+        }
         if (!e.target.classList.contains('nav__item')) return;
         addActive(e.target, e.currentTarget);
 
@@ -65,11 +73,9 @@ document.addEventListener('DOMContentLoaded', (e) => {
         addActive(neededEl, footerNav);
 
 
-
-
         const blockId = e.target.getAttribute('href').substring(1);
 
-        if (blockId) {
+        if (!e.target.classList.contains('nav__item--page')) {
             document.getElementById(blockId).scrollIntoView({
                 behavior: "smooth",
                 block: "start"
