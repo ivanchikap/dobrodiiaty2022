@@ -9174,6 +9174,49 @@ h2 span:last-child::after {
     }
 }
 
+.form__wrapper {
+    width: 70%;
+    margin: 3rem auto;
+    border-radius: 1rem;
+}
+
+@media screen and (max-width: 780px) {
+    .form__wrapper {
+        width: 100%;
+    }
+}
+
+.form__group {
+    margin-bottom: 2rem;
+}
+
+.form__element {
+    font-family: "Comfortaa", cursive;
+    font-weight: 700;
+    color: #0B1B35;
+    width: 100%;
+    min-height: 5rem;
+    border-radius: 1rem;
+    padding: 1rem 2.7rem;
+    font-size: 1.8rem;
+    border: 1px solid #CFC4ED;
+}
+
+@media screen and (max-width: 576px) {
+    .form__element {
+        padding: 0.8rem 1.8rem;
+        font-size: 1.6rem;
+    }
+}
+
+.form__element--textarea {
+    min-height: 15rem;
+}
+
+.form__element:focus, .form__element:active {
+    border: 1px solid #5E2E94;
+}
+
 .header {
     padding-bottom: 7rem;
     border-bottom: 1px solid #5E2E94;
@@ -9916,6 +9959,96 @@ h2 span:last-child::after {
 
 .action__body a:hover {
     text-decoration: none;
+}
+
+.benefactor h2 {
+    margin-bottom: 2rem;
+}
+
+.benefactor__item {
+    margin-bottom: 3rem;
+}
+
+.benefactor h5 {
+    font-family: "Comfortaa", cursive;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: #000;
+    margin-bottom: 1.2rem;
+}
+
+@media screen and (max-width: 780px) {
+    .benefactor h5 {
+        font-size: 1.8rem;
+    }
+}
+
+.benefactor__req {
+    max-width: 80%;
+    margin: 2rem auto 0 auto;
+}
+
+@media screen and (max-width: 992px) {
+    .benefactor__req {
+        max-width: 90;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .benefactor__req {
+        max-width: 100%;
+    }
+}
+
+.benefactor__req-item {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    font-family: "Comfortaa", cursive;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 1.4;
+    color: #000;
+    height: 100%;
+}
+
+@media screen and (max-width: 780px) {
+    .benefactor__req-item {
+        font-size: 1.6rem;
+    }
+}
+
+.benefactor__req-item div:first-child {
+    margin-right: 2rem;
+    width: 30%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 576px) {
+    .benefactor__req-item div:first-child {
+        display: none;
+    }
+}
+
+.benefactor__req-item div:last-child {
+    width: 70%;
+    font-weight: 500;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 576px) {
+    .benefactor__req-item div:last-child {
+        width: 100%;
+    }
+}
+
+.benefactor__action {
+    text-align: center;
 }
 
 .footer {

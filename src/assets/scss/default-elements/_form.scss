@@ -1,0 +1,41 @@
+.form {
+
+  &__wrapper {
+    width: 70%;
+    margin: 3rem auto;
+    border-radius: 1rem;
+
+    @include mobile-large {
+      width: 100%;
+    }
+  }
+
+  &__group {
+    margin-bottom: 2rem;
+  }
+
+  &__element {
+    font-family: "Comfortaa", cursive;
+    font-weight: 700;
+    color: #0B1B35;
+    width: 100%;
+    min-height: 5rem;
+    border-radius: 1rem;
+    padding: 1rem 2.7rem;
+    font-size: 1.8rem;
+    border: 1px solid $purple;
+
+    @include mobile {
+      padding: .8rem 1.8rem;
+      font-size: 1.6rem;
+    }
+
+    &--textarea {
+      min-height: 15rem;
+    }
+
+    &:focus, &:active {
+     border: 1px solid $violet;;
+    }
+  }
+}

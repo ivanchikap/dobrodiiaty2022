@@ -4,12 +4,45 @@ title: Отримати допомогу
 ---
 
 <!-- Main -->
-<main class="main">
-    <section class="form-section">
-        <div class="container">
-            <div class="form-wrapper">
-               Форма
-            </div>
+
+<section class="form-section">
+    <div class="container">
+        <h2 class="text-center">
+            <span>Заповніть будь-ласка</span>
+            <span>Форму звернення на допомогу</span>
+        </h2>
+
+        <div class="form__wrapper">
+            <form class="form" action="/">
+                <div class="form__group">
+                    <label>
+                        <input type="text" class="form__element" placeholder="Введіть ФІО">
+                    </label>
+                </div>
+
+               <div class="form__group">
+                   <label>
+                       <input type="email" class="form__element" placeholder="Введіть email">
+                   </label>
+               </div>
+
+                <div class="form__group">
+                    <label>
+                        <input type="tel" class="form__element" placeholder="Введіть Ваш номер телефона">
+                    </label>
+                </div>
+
+
+                <div class="form__group">
+                    <label>
+                        <textarea type="text" class="form__element form__element--textarea" placeholder="Опишіть проблему"></textarea>
+                    </label>
+                </div>
+
+                <div class="form__action">
+                    <button class="btn btn--default btn--violet">Отримати допомогу</button>
+                </div>
+            </form>
         </div>
-    </section>
-</main>
+    </div>
+</section>
