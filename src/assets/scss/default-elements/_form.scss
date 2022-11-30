@@ -38,4 +38,28 @@
      border: 1px solid $violet;;
     }
   }
+
+  &__file {
+    display: none;
+  }
+
+  &__file-label {
+    color: #333;
+    font-family: "Comfortaa", cursive;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: color .2s linear;
+
+    i {
+      font-size: 3rem;
+      margin-right: 1rem;
+    }
+
+    &:hover {
+      color: $violet;
+    }
+  }
 }

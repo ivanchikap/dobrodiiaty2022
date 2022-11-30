@@ -9217,6 +9217,32 @@ h2 span:last-child::after {
     border: 1px solid #5E2E94;
 }
 
+.form__file {
+    display: none;
+}
+
+.form__file-label {
+    color: #333;
+    font-family: "Comfortaa", cursive;
+    font-weight: 700;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: color 0.2s linear;
+}
+
+.form__file-label i {
+    font-size: 3rem;
+    margin-right: 1rem;
+}
+
+.form__file-label:hover {
+    color: #5E2E94;
+}
+
 .header {
     padding-bottom: 7rem;
     border-bottom: 1px solid #5E2E94;
