@@ -4,10 +4,11 @@ document.addEventListener('DOMContentLoaded', (e) => {
     const nav = document.querySelector('.nav--header');
     const navFooter = document.querySelector('.nav--footer');
     const navSidebar = document.querySelector('.nav--sidebar');
-    console.log(nav);
 
     nav.addEventListener('click', (e) => {
-        if (!e.target.classList.contains('nav__item--page')) {
+        const firstChar =  e.target.getAttribute('href')[0];
+
+        if (firstChar === '#') {
             e.preventDefault();
         }
         if (!e.target.classList.contains('nav__item')) return;
@@ -23,7 +24,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
 
         const blockId = e.target.getAttribute('href').substring(1);
 
-        if (!e.target.classList.contains('nav__item--page')) {
+        if (firstChar === '#') {
             document.getElementById(blockId).scrollIntoView({
                 behavior: "smooth",
                 block: "start"
@@ -33,7 +34,8 @@ document.addEventListener('DOMContentLoaded', (e) => {
 
 
     navFooter.addEventListener('click', (e) => {
-        if (!e.target.classList.contains('nav__item--page')) {
+        const firstChar =  e.target.getAttribute('href')[0];
+        if (firstChar === '#') {
             e.preventDefault();
         }
 
@@ -51,7 +53,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
         const blockId = e.target.getAttribute('href').substring(1);
 
 
-        if (!e.target.classList.contains('nav__item--page')) {
+        if (firstChar === '#') {
             document.getElementById(blockId).scrollIntoView({
                 behavior: "smooth",
                 block: "start"
@@ -60,7 +62,8 @@ document.addEventListener('DOMContentLoaded', (e) => {
     });
 
     navSidebar.addEventListener('click', (e) => {
-        if (!e.target.classList.contains('nav__item--page')) {
+        const firstChar =  e.target.getAttribute('href')[0];
+        if (firstChar === '#') {
             e.preventDefault();
         }
         if (!e.target.classList.contains('nav__item')) return;
@@ -76,7 +79,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
 
         const blockId = e.target.getAttribute('href').substring(1);
 
-        if (!e.target.classList.contains('nav__item--page')) {
+        if (firstChar === '#') {
             document.getElementById(blockId).scrollIntoView({
                 behavior: "smooth",
                 block: "start"
