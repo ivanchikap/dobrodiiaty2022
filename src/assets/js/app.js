@@ -1,9 +1,10 @@
 document.addEventListener('DOMContentLoaded', (e) => {
 
     //nav
-    const nav = document.querySelector('.nav');
+    const nav = document.querySelector('.nav--header');
     const navFooter = document.querySelector('.nav--footer');
     const navSidebar = document.querySelector('.nav--sidebar');
+    console.log(nav);
 
     nav.addEventListener('click', (e) => {
         if (!e.target.classList.contains('nav__item--page')) {
