@@ -46,10 +46,17 @@ footer {
   margin-top: auto;
 }
 
-.clearfix:after {
-  content: '';
-  display: block;
-  clear: both;
+.link {
+  font-family: $comfortaa;
+  font-size: 2rem;
+  font-weight: 600;
+  color: $violet;
+  @extend .text-overflow;
+  text-decoration: underline;
+  
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 strong {

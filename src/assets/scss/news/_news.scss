@@ -1,0 +1,35 @@
+.news {
+  padding-top: 10rem;
+
+  @include laptop {
+    padding-top: 5rem;
+  }
+
+  @include mobile-large {
+    padding-top: 4.8rem;
+  }
+
+  @include mobile {
+    padding: 4.8rem 0 0 0;
+  }
+
+  &__main .row {
+    padding: 3rem 0;
+  }
+
+  &__link {
+    text-align: right;
+  }
+
+  .col-md-6:last-child {
+    @include tablet {
+      margin: 3rem auto 0 auto;
+    }
+  }
+
+  .col-sm-12:not(:first-child) {
+    @include mobile-large {
+      margin-top: 3rem;
+    }
+  }
+}
