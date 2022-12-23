@@ -85,4 +85,14 @@
     max-height: 12rem;
     overflow: hidden;
   }
+  
+  &__link {
+    color: $violet;
+    margin-top: 1rem;
+    padding: 0.4rem 0;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }

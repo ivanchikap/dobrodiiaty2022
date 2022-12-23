@@ -47,15 +47,51 @@ footer {
 }
 
 .link {
+  display: flex;
+  align-items: center;
   font-family: $comfortaa;
   font-size: 2rem;
   font-weight: 600;
   color: $violet;
   @extend .text-overflow;
-  text-decoration: underline;
+  transition: color .2s linear;
+
+  @include mobile-large {
+    font-size: 1.8rem;
+  }
   
   &:hover {
-    text-decoration: none;
+    color: $black;
+  }
+
+  &--in {
+    justify-content: flex-end;
+    &::after {
+      content: '>';
+      display: block;
+      margin-left: 1rem;
+    }
+  }
+
+  &--out {
+    max-width: calc(100% - 22rem);
+    padding-right: 1rem;
+    justify-content: flex-start;
+
+    &::before {
+      content: '<';
+      display: block;
+      margin-right: 1rem;
+
+      @include mobile-large {
+        margin-right: .5rem;
+      }
+    }
+
+    @include mobile {
+      margin-bottom: 1.6rem;
+      max-width: 100%;
+    }
   }
 }
 
