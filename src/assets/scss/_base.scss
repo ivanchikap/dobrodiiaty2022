@@ -145,6 +145,15 @@ h1 {
         height: 1.5rem;
         background: $yellow;
         z-index: -1;
+
+        @include tablet {
+          height: 1rem;
+        }
+
+        @include mobile-large {
+          height: 0.6rem;
+          bottom: .6rem;
+        }
       }
     }
   }
@@ -196,6 +205,14 @@ h2 {
         @include tablet {
           width: 100%;
           min-width: 104px;
+        }
+
+        @include mobile-large {
+          height: .5rem;
+          top: 2.2rem;
+        }
+        @include mobile {
+          top: 1.6rem;
         }
       }
     }

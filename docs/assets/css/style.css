@@ -8183,6 +8183,19 @@ h1 span:last-child::after {
     z-index: -1;
 }
 
+@media screen and (max-width: 992px) {
+    h1 span:last-child::after {
+        height: 1rem;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    h1 span:last-child::after {
+        height: 0.6rem;
+        bottom: 0.6rem;
+    }
+}
+
 h2 {
     font-family: "Comfortaa", cursive;
     font-weight: 700;
@@ -8236,6 +8249,19 @@ h2 span:last-child::after {
     h2 span:last-child::after {
         width: 100%;
         min-width: 104px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    h2 span:last-child::after {
+        height: 0.5rem;
+        top: 2.2rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    h2 span:last-child::after {
+        top: 1.6rem;
     }
 }
 
@@ -10079,6 +10105,13 @@ h2 span:last-child::after {
     }
 }
 
+@media screen and (max-width: 576px) {
+    .news__header {
+        -ms-flex-align: start;
+        align-items: flex-start;
+    }
+}
+
 .news__header h2 {
     text-align: left;
 }
@@ -10087,6 +10120,12 @@ h2 span:last-child::after {
     .news__header h2 {
         text-align: center;
         margin-bottom: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .news__header h2 {
+        text-align: left;
     }
 }
 

@@ -21,6 +21,10 @@
     @include mobile-large {
       flex-direction: column;
     }
+
+    @include mobile {
+      align-items: flex-start;
+    }
     
     h2 {
       text-align: left;
@@ -28,6 +32,9 @@
       @include mobile-large {
         text-align: center;
         margin-bottom: 1.4rem;
+      }
+      @include mobile {
+        text-align: left;
       }
     }
   }
